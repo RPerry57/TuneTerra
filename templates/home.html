@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            TuneTerra
-        </title>
-        <h1>Welcome to TuneTerra!</h1><br />
-    </head>
-
-<h2>Let's get started! <a href='/auth'>Authorize with Spotify here!</a></h2>
+  <head>
+    <title>TuneTerra</title>
+    <style>
+      body {
+        background-color: #1e90ff;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        font-size: 4rem;
+        text-align: center;
+      }
+      .spotify-button {
+        display: inline-block;
+        background-color: white;
+        color: #1e90ff;
+        border: none;
+        padding: 12px 24px;
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+        /* new styles */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: transform 0.2s ease;
+      }
+      .spotify-button:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.05);
+      }
+      .spotify-button a {
+        color: #1e90ff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to TuneTerra!</h1>
+    <button class="spotify-button"><a href="/auth">Authorize with Spotify</a></button>
+  </body>
+</html>

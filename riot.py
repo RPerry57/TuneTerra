@@ -3,7 +3,7 @@ from flask import Flask, Response, request, render_template, redirect, url_for
 from flaskext.mysql import MySQL
 import flask_login
 from riotwatcher import LolWatcher
-from secrets import databasePassword, secretAppKey, riotAPI
+from mysecrets import databasePassword, secretAppKey, riotAPI
 
 mysql = MySQL()
 app = Flask(__name__)

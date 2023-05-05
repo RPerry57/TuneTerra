@@ -7,10 +7,11 @@ from riot import getPlaylist
 from spotify import linkDresser, playlistID, devicePicker
 import requests
 
-from secrets import databasePassword, secretAppKey, clientSecret
+from mysecrets import databasePassword, secretAppKey, clientSecret
 
 mysql = MySQL()
 app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 app.secret_key = secretAppKey()
 
 #These will need to be changed according to your creditionals
